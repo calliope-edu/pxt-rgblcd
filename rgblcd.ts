@@ -1,7 +1,7 @@
 /*
 *	
 */
-//% color=#0fbc11 icon="\uf1ab" block="rgblcd"
+//% color=#0fbc11 icon="\uf1ab" block="RGB-LCD"
 namespace rgblcd {
 
     let isnotinitialized = true
@@ -109,6 +109,11 @@ namespace rgblcd {
      */
     //% weight=87 blockGap=8
     //% block="write | %str | to | row | %row | with speed | %speed | ms" 
+    //% block.loc.de="schreibe | %str | in | Zeile | %row | mit Geschwindigkeit | %speed | ms"
+    //% block.loc.fr="écrire | %str | à la ligne | %row | avec vitesse | %speed | ms"
+    //% block.loc.es="escribir | %str | en línea | %row | con velocidad | %speed | ms"
+    //% block.loc.it="scrivi | %str | sulla riga | %row | con velocità | %speed | ms"
+    //% block.loc.el="γράψε | %str | στη γραμμή | %row | με ταχύτητα | %speed | ms"
     //% blockId=write_String
     //% icon="\uf1ab"
     export function writeString(str: string, row: number, speed: number) {
@@ -171,6 +176,11 @@ namespace rgblcd {
      */
     //% weight=87 blockGap=8
     //% block="set red to | %r" 
+    //% block.loc.de="setze Rot auf | %r"
+    //% block.loc.fr="définir le rouge à | %r"
+    //% block.loc.es="establecer rojo en | %r"
+    //% block.loc.it="imposta rosso a | %r"
+    //% block.loc.el="ρύθμισε το κόκκινο σε | %r"
     //% blockId=set_red
     //% icon="\uf1ab"
     export function setRed(r: number) {
@@ -185,7 +195,12 @@ namespace rgblcd {
      * @param g green color to be set
      */
     //% weight=87 blockGap=8
-    //% block="set green to | %g" 
+    //% block="set green to | %g"
+    //% block.loc.de="setze Grün auf | %g"
+    //% block.loc.fr="définir le vert à | %g"
+    //% block.loc.es="establecer verde en | %g"
+    //% block.loc.it="imposta verde a | %g"
+    //% block.loc.el="ρύθμισε το πράσινο σε | %g"
     //% blockId=set_green
     //% icon="\uf1ab"
     export function setGreen(g: number) {
@@ -201,6 +216,11 @@ namespace rgblcd {
      */
     //% weight=87 blockGap=8
     //% block="set blue to | %b"
+    //% block.loc.de="setze Blau auf | %b"
+    //% block.loc.fr="définir le bleu à | %b"
+    //% block.loc.es="establecer azul en | %b"
+    //% block.loc.it="imposta blu a | %b"
+    //% block.loc.el="ρύθμισε το μπλε σε | %b"
     //% blockId=set_blue
     //% icon="\uf1ab"
     export function setBlue(b: number) {
@@ -218,6 +238,11 @@ namespace rgblcd {
      */
     //% weight=87 blockGap=8
     //% block="set RGB to | red |  %r | green |  %g | blue |  %b"
+    //% block.loc.de="setze RGB auf | Rot | %r | Grün | %g | Blau | %b"
+    //% block.loc.fr="définir RVB à | rouge | %r | vert | %g | bleu | %b"
+    //% block.loc.es="establecer RGB en | rojo | %r | verde | %g | azul | %b"
+    //% block.loc.it="imposta RGB a | rosso | %r | verde | %g | blu | %b"
+    //% block.loc.el="ρύθμισε RGB σε | κόκκινο | %r | πράσινο | %g | μπλε | %b"
     //% blockId=set_rgb
     //% icon="\uf1ab"
     export function setRGB(r: number, g: number, b: number) {
